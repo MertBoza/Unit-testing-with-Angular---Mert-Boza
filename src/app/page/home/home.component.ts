@@ -41,7 +41,6 @@ export class HomeComponent {
 
   public getUserList(): void {
     this.userService.getUsers().subscribe(users => {
-      console.log(users);
       this.userList = users;
       this.originalUserList = users;
     })
