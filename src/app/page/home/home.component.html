@@ -3,7 +3,7 @@
   <app-link [link]="['/user', 'new']">Add user</app-link>
 </section>
 <section>
-  <input type="search" class="p-3 shadow-none border-2" placeholder="Search..."  [formControl]="searchControl">
+  <input type="search" class="p-3 border-2" placeholder="Search..."  [formControl]="searchControl">
 </section>
 <section>
   <table class="table-auto w-full overflow-x-scroll">
@@ -27,7 +27,7 @@
           </td>
           <td>
             <app-link [link]="['/user', user.id]" class="mr-3">View</app-link>
-            <app-button [type]="'danger'">Delete</app-button>
+            <app-button [variant]="'danger'">Delete</app-button>
           </td>
         </tr>
       }

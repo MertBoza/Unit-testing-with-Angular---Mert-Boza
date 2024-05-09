@@ -8,5 +8,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   templateUrl: './button.component.html',
 })
 export class ButtonComponent {
-  @Input() type: 'primary' | 'secondary' | 'success'  | 'danger' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'success'  | 'danger' = 'primary';
+  @Input() type: 'button' | 'submit' = 'button';
+  @Input() disabled: boolean = false;
 }
