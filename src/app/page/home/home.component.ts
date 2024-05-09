@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import {User} from "../../interface/user";
-import {FormControl} from "@angular/forms";
+import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {UserService} from "../../service/user.service";
 import {ButtonComponent} from "../../component/button/button.component";
 import {LinkComponent} from "../../component/link/link.component";
-import {InputComponent} from "../../component/input/input.component";
 
 @Component({
   selector: 'app-home',
@@ -12,7 +11,7 @@ import {InputComponent} from "../../component/input/input.component";
   imports: [
     ButtonComponent,
     LinkComponent,
-    InputComponent
+    ReactiveFormsModule
   ],
   templateUrl: './home.component.html',
 })

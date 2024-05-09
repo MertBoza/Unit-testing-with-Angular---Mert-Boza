@@ -3,7 +3,7 @@
   <app-link [link]="['/user', 'new']">Add user</app-link>
 </section>
 <section>
-  <app-input [type]="'search'" [placeholder]="'Search...'"  [control]="searchControl"></app-input>
+  <input type="search" placeholder="Search..."  [formControl]="searchControl">
 </section>
 <section>
   <table class="table-auto w-full overflow-x-scroll">
